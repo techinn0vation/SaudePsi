@@ -2,6 +2,7 @@
 
 import React, { ReactNode } from 'react'
 
+import Menu from 'components/Menu'
 import { ThemeProvider } from 'styled-components'
 
 import { Container } from './styles'
@@ -20,7 +21,10 @@ export const Layout = ({ children }: LayoutProps) => {
       <ThemeProvider theme={theme}>
         <html lang='pt-br'>
           <body className={mainFont.className}>
-            <Container>{children}</Container>
+            <Container>
+              <Menu />
+              {children}
+            </Container>
           </body>
         </html>
         <GlobalStyle />

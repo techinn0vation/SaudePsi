@@ -9,5 +9,5 @@ export const Container = styled.div`
   -ms-flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
+  overflow: hidden;
 `
