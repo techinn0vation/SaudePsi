@@ -12,16 +12,16 @@ export const WrapperConstPsicologia = styled.section`
   justify-content: start;
   align-items: center;
 
-  @media (min-width: ${(props) => props.theme.screenSize.XL}) {
+  @media (min-width: ${(props) => props.theme.screenSize.LG}) {
     position: relative;
 
     &::before {
       content: '';
-      width: 4rem;
+      width: 2rem;
       height: 23rem;
 
       position: absolute;
-      top: 55%;
+      top: 75%;
       left: 0;
       z-index: -1;
 
@@ -38,24 +38,24 @@ export const ContentConstPsicologia = styled.main`
   -ms-flex-direction: column;
   justify-content: start;
   align-items: center;
-  gap: 5rem;
+  gap: 10rem;
 
   padding: 6rem 1.4rem;
 
   @media (min-width: ${(props) => props.theme.screenSize.MD}) {
-    padding: 10rem 3rem;
+    width: 73rem;
   }
 
   @media (min-width: ${(props) => props.theme.screenSize.LG}) {
-    padding: 6rem;
+    width: 87.5rem;
   }
 
   @media (min-width: ${(props) => props.theme.screenSize.XL}) {
-    padding: 6rem 10rem;
+    width: 99rem;
   }
 
   @media (min-width: ${(props) => props.theme.screenSize.XXL}) {
-    width: 148rem;
+    width: 110rem;
   }
 `
 export const ViewConstPsicologia = styled.div`
@@ -106,7 +106,7 @@ export const ViewConstPsicologia = styled.div`
     align-items: center;
 
     & > div {
-      width: 60rem;
+      width: 65rem;
 
       h1,
       p {
@@ -266,7 +266,7 @@ export const HeaderCardConstPsicologia = styled.div`
   padding: 2rem;
 
   @media (min-width: ${(props) => props.theme.screenSize.MD}) {
-    padding: 3rem;
+    padding: 0;
   }
 `
 export const BGCardConstPsicologia = styled(Image)`

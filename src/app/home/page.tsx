@@ -1,6 +1,7 @@
 import {
   AreaDeIntervenção,
   ConstPsicologia,
+  ConstPsicoterapia,
   Hero
 } from 'components/GeralComponents'
 
@@ -13,6 +14,7 @@ export default function Home() {
       />
       <ConstPsicologia />
       <AreaDeIntervenção />
+      <ConstPsicoterapia />
     </>
   )
 }

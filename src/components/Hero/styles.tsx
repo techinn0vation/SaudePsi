@@ -47,42 +47,21 @@ export const WrapperHero = styled.section`
   @media (min-width: ${(props) => props.theme.screenSize.MD}) {
     &::before {
       top: -5rem;
-      left: 2rem;
+      left: 5rem;
     }
 
     &::after {
-      width: 35rem;
+      width: 40rem;
     }
   }
 
   @media (min-width: ${(props) => props.theme.screenSize.LG}) {
-    &::before {
-      top: -6rem;
-      left: 3rem;
-    }
-
     &::after {
-      width: 53rem;
-    }
-  }
-
-  @media (min-width: ${(props) => props.theme.screenSize.XL}) {
-    &::before {
-      top: -7rem;
-      left: 4rem;
-    }
-
-    &::after {
-      width: 60rem;
+      width: 45rem;
     }
   }
 
   @media (min-width: ${(props) => props.theme.screenSize.XXL}) {
-    &::before {
-      top: -7rem;
-      left: 4rem;
-    }
-
     &::after {
       width: 75rem;
     }
@@ -122,12 +101,12 @@ export const ContentHero = styled.main`
     }
   }
 
-  @media (min-width: ${(props) => props.theme.screenSize.LG}) {
-    padding: 20rem 9rem;
+  @media (min-width: ${(props) => props.theme.screenSize.XL}) {
+    padding: 18rem 10rem;
   }
 
   @media (min-width: ${(props) => props.theme.screenSize.XXL}) {
-    padding: 25rem;
+    padding: 18rem 15rem;
   }
 `
 export const ViewHero = styled.div`
@@ -248,23 +227,23 @@ export const ViewHero = styled.div`
   }
 
   @media (min-width: ${(props) => props.theme.screenSize.LG}) {
-    width: 75rem;
+    width: 65rem;
+
+    & > div {
+      h1 {
+        font-size: 4.8rem;
+        line-height: 7.2rem;
+      }
+    }
+  }
+
+  @media (min-width: ${(props) => props.theme.screenSize.XXL}) {
+    width: 85rem;
 
     & > div {
       h1 {
         font-size: 5.8rem;
         line-height: 8.7rem;
-      }
-    }
-  }
-
-  @media (min-width: ${(props) => props.theme.screenSize.XL}) {
-    width: 85rem;
-
-    & > div {
-      h1 {
-        font-size: 6.8rem;
-        line-height: 10.2rem;
       }
     }
   }

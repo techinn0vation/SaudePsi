@@ -18,15 +18,16 @@ export const WrapperHeader = styled.header`
   top: 0;
   left: auto;
   z-index: 2;
-
   padding: 1.6rem 2rem;
 
   @media (min-width: ${(props) => props.theme.screenSize.MD}) {
     &::before {
       content: '';
       width: 100%;
-      max-width: 60%;
       height: 100%;
+      max-width: 55rem;
+      margin: 0;
+
       position: absolute;
       top: 0;
       left: 0;
@@ -37,15 +38,19 @@ export const WrapperHeader = styled.header`
   }
 
   @media (min-width: ${(props) => props.theme.screenSize.LG}) {
-    padding: 1.6rem 3rem;
+    padding: 1.6rem 2rem;
   }
 
   @media (min-width: ${(props) => props.theme.screenSize.XL}) {
-    padding: 1.6rem 3rem;
+    padding: 1.6rem 6rem;
   }
 
   @media (min-width: ${(props) => props.theme.screenSize.XXL}) {
-    padding: 1.6rem 9rem;
+    padding: 1.6rem 10rem;
+
+    &::before {
+      max-width: 110rem;
+    }
   }
 `
 export const ContentHeader = styled.main`
@@ -211,11 +216,11 @@ export const InnerBlockLinks = styled.div`
 `
 
 export const DisplayLink = styled(Link)`
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
   font-style: normal;
-  line-height: 2.4rem;
-  text-transform: uppercase;
+  line-height: 2.1rem;
+  text-transform: capitalize;
   text-decoration: none;
   cursor: pointer;
   color: ${(props) => props.theme.colors.Branco};
